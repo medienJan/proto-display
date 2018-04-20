@@ -1,12 +1,14 @@
 <header>
-    <img id="logo" src="images/muid-logo.png" alt="">
+    {{#link-to 'index'}}
+        <img src="/images/muid-logo.png"/>
+    {{/link-to}}
     <div id="notice">
         <h1>{{model.notice.title}}</h1>
         <p>
             {{model.notice.message}}
         </p>
     </div>
-    <img class="slide" src="images/poster.jpg" alt="">
+    <img class="slide" src="/images/poster.jpg" alt="">
 </header>
 <main>
     {{outlet}}
