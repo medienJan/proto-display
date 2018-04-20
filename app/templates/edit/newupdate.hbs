@@ -1,1 +1,13 @@
-{{outlet}}
+
+<h3>Wann?</h3>
+{{input type="text" value=when}}
+<br>
+<h3>Was?</h3>
+{{input type="text" value=what}}
+<br>
+<h3>Was genau?</h3>
+{{textarea value=how}}
+<br>
+<button {{action "newUpdate" what when how}}>
+    Speichern
+</button>
