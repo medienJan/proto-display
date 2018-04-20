@@ -1,1 +1,7 @@
-{{outlet}}
+{{input type="text" value=when}}
+<br>
+{{input type="text" value=what}}
+<br>
+{{textarea value=how}}
+<br>
+<button type="button" {{action "newUpdate" when what how}}></button>
