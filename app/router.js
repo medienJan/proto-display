@@ -7,6 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('edit', function() {
+    this.route('notice');
+    this.route('newupdate');
+  });
 });
 
 export default Router;
